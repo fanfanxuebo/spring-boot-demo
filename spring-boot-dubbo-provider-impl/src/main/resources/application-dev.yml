@@ -1,0 +1,41 @@
+#
+spring:
+  application:
+    name: demo-dubbo-provider
+  datasource:
+    name: demoDatasource
+    url: jdbc:mysql://
+    username: msservies_user
+    password: Msservies_user_12#
+    driver-class-name: com.mysql.jdbc.Driver
+    hikari:
+      connection-timeout: 20000
+  jpa:
+    show-sql: true
+  redis:
+    database: 15
+    host:
+    port: 6379
+    password: yeiD7tho
+    timeout: 5000
+    jedis:
+      pool:
+        max-active: 50
+        max-wait: 5000
+#
+server:
+  port: 8760
+#
+dubbo:
+  registry:
+    protocol: zookeeper
+    address:
+  protocol:
+    port: 20880
+    name: dubbo
+  application:
+    name: demo-dubbo-provider
+  provider:
+    timeout: 5000
+    version: 1.0.0
+    group: dev

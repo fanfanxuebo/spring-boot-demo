@@ -1,0 +1,22 @@
+#
+spring:
+  application:
+    name: demo-dubbo-consumer
+#
+server:
+  port: 8761
+#
+dubbo:
+  registry:
+    protocol: zookeeper
+    address:
+  protocol:
+    port: 20881
+    name: dubbo
+  application:
+    name: demo-dubbo-consumer
+  consumer:
+    timeout: 5000
+    version: 1.0.0
+    group: dev
+    check: false
