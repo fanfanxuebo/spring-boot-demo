@@ -9,7 +9,7 @@ server:
 dubbo:
   registry:
     protocol: zookeeper
-    address:
+    address: 127.0.0.1:2181
   protocol:
     port: 20881
     name: dubbo

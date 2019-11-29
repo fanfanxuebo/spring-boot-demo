@@ -5,8 +5,8 @@ spring:
   datasource:
     name: demoDatasource
     url: jdbc:mysql://
-    username: msservies_user
-    password: Msservies_user_12#
+    username:
+    password:
     driver-class-name: com.mysql.jdbc.Driver
     hikari:
       connection-timeout: 20000
@@ -16,7 +16,7 @@ spring:
     database: 15
     host:
     port: 6379
-    password: yeiD7tho
+    password:
     timeout: 5000
     jedis:
       pool:
@@ -29,7 +29,7 @@ server:
 dubbo:
   registry:
     protocol: zookeeper
-    address:
+    address: 127.0.0.1:2181
   protocol:
     port: 20880
     name: dubbo
